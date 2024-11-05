@@ -1,10 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta http-equiv="refresh" content="0; url=/phototing/service.html">
-    <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiFF</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="/jpg/var_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <p>If you are not redirected automatically, follow the <a href="/phototing/service.html">홈페이지로 이동..</a>.</p>
+    <!-- 마우스 따라오는 커서 -->
+    <div class="cursor"></div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="color: white;">RiFF</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#main2">우리는 누구</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service">메인 서비스</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#guide">참여 가이드</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="hero-title"><span style="font-size: 0.9em;">RiFF</span> <span style="font-size: 0.7em;"><br>매력적인 사람들이 자연스럽게 모여<br> 생기있는 지역을 만든다.</span></h1>
+            <p class="hero-subtitle">RiFF는 청년들의 자연스러운 만남과 교류를 통해 <br> 지역 상권을 활성화하는 네트워킹 서비스입니다.<br />
+            </p>
+        </div>
+    </section>
+
+    <script>
+        function scrollToMain2() {
+            document.querySelector('.main2').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- Main2 Section -->
+    <section id= "main2"class="main2">
+        <div class="container text-center">
+            <h2 class="section-title">WE ARE...</h2>
+            <p class="m2-ment">
+                <span class="fade-in">안녕하세요, 기획자입니다. </span><br><br>   
+                <span class="fade-in">우리 모두 각자의 매력을 가지고 있습니다.<br> 그리고 새로운 만남 속에서 <br> 그 매력은 발산되고, 발견되기도 합니다.</span><br><br>   
+                <span class="fade-in">특히, 우리는 함께할 때<br> 더 많은 웃음과 <br> 풍부한 추억을 쌓을 수 있습니다.</span><br><br>               
+                <span class="fade-in">이러한 자연스럽고 편안한<br> 교류의 기회를 제공하고자, <br> RiFF 서비스를 개발하게 되었습니다</span><br><br>
+                <span class="fade-in">여러분의 청춘의 순간이<br> 사람으로, 추억으로 <br> 더 풍성해지길 바랍니다.</span>
+            </p>
+            
+            <div class="circle-3"></div> <!-- 세 번째 동그라미 -->
+            <div class="circle-4"></div> <!-- 네 번째 동그라미 -->
+        </div>
+    </section>
+
+    <!-- Main Service Section -->
+    <section id="service" class="service-section">
+        <div class="container text-center">
+            <h2 class="section-title">MAIN SERVICE</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <i class="fas fa-calendar-alt info-icon"></i>
+                        <p class="info-title">일일</p>
+                
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-title">위치기반</p>
+                      
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <i class="fas fa-camera info-icon"></i>
+                        <p class="info-title">포토팅</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="why-section" id="guide">
+    <div class="container">
+        <h2 class="section-title text-center">HOW TO DO</h2>
+        <p class="section-description">RiFF, 이렇게 이용해주세요</p>
+    
+        <div class="row align-items-center mb-5">
+            <div class="col-md-12">
+                <div class="why-text">
+                    <h4>1. 프로필 카드 등록</h4>
+                    <p>이용 당일, <span style="background-color: yellow; padding: 0 5px;">친구와 함께 찍은 사진</span>을 포함한 프로필 카드를 등록한다.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-12">
+                <div class="why-text">
+                    <h4>2. 그룹 리스트 확인</h4>
+                    <p>실시간으로 내 주변에 있는 그룹 리스트를 확인한다. 
+                        <br><span style="font-size: 1.1rem; color: #C400C6;">※리스트에서는 나와 상대방의 얼굴이 <u>블러 처리된 상태</u>로 보여집니다.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-12">
+                <div class="why-text">
+                    <h4>3. 친구 요청</h4>
+                    <p>함께 놀고 싶은 사람에게 친구 요청을 보낸다. <br><span style="font-size: 1.1rem; color: #C400C6;">※<u>친구 요청 시, 상대방에게 내 프로필 사진이 공개</u>됩니다.</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-12">
+                <div class="why-text">
+                    <h4>4. 친구 수락 및 채팅</h4>
+                    <p><u>친구 요청이 수락</u>되면, 사진을 포함한 <span style="background-color: yellow; padding: 0 5px;">공개된 프로필이 제공</span>되며, 채팅이 가능합니다.<br><span style="font-size: 1.1rem; color: #C400C6;">※매너없는 행동은 이용에 제한이 될 수 있습니다</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <div class="why-text">
+                    <h4>5. 다같이 논다!</h4>
+                    <p>여러분의 잊지 못할 추억과 인연을 만드세요!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+        <!-- JUST TRY IT Section -->
+        <section class="just-try-it-section">
+            <div class="container text-center">
+                <h2 class="section-title">JUST TRY IT</h2>
+                <p class="section-description">각자의 매력을 지닌 여러분 모두 환영합니다.<br>친구와 함께 우리의 시너지를 보여주세요!</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="try-step">
+                            <h4>1. 친구들과 약속을 잡는다</h4>
+                            <p>친구야 우리 놀자!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="try-step">
+                            <h4>2.준비한다</h4>
+                            <p>매너있고 즐겁게 놀 마음가짐을 준비한다.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="try-step">
+                            <h4>3. 채팅한다</h4>
+                            <p>친구가 된 그룹과 실시간 채팅을 한다<./p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="try-step">
+                            <h4>4. 함께 추억을 쌓는다</h4>
+                            <p>실시간 주변에 있는 그룹과 친구가 되어 함께한다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>RiFF</p>
+        </div>
+    </footer>
+
+    <script>
+        // 마우스 따라오는 커서 동그라미
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.top = e.pageY + 'px';
+            cursor.style.left = e.pageX + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicked');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicked');
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
