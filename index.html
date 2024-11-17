@@ -10,6 +10,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+     <!-- 플로팅 버튼 -->
+    <a class="floating-button" href="https://open.kakao.com/o/sQ7Og8Wg">
+        <img src="../images/floating-img.png">
+    </a>
+    <div class="floating-button-up" id="scrollTopButton">
+        <svg class="bi bi-arrow-up" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+                  fill-rule="evenodd"/>
+        </svg>
+    
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollTopButton = document.getElementById("scrollTopButton");
+    
+            scrollTopButton.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollButton = document.getElementById("scrollTopButton");
+            const showButtonAt = 3000;
+    
+            window.addEventListener("scroll", function () {
+                if (window.scrollY >= showButtonAt) {
+                    scrollButton.style.display = "block";
+                } else {
+                    scrollButton.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
     <!-- 마우스 따라오는 커서 -->
     <div class="cursor"></div>
 
