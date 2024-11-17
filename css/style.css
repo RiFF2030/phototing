@@ -9,6 +9,48 @@
     font-family:'DNFBitBitv2';
     font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')}
 
+/* 플로팅 버튼 */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.floating-button:hover {
+    background-color: #2980b9;
+}
+
+.floating-button-up {
+    position: fixed;
+    bottom: 19px;
+    right: 65px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    padding: 3px 8px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    display: none;
+}
+
+.floating-button-up:hover {
+    background-color: #ffffff;
+}
 
 
 /* 마우스 따라다니는 커서 동그라미 */
