@@ -98,7 +98,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
     z-index: 1000;
     transition: background-color 0.3s ease;
 }
